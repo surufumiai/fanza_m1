@@ -30,10 +30,10 @@
     // リダイレクト先URL（UTMなしでも可）
     const redirectURL = "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_600007/?utm_source=pixiv_F&utm_medium=text&utm_campaign=m01-F";
 
-    // 1.5秒後にリダイレクト
+    // 1秒後にリダイレクト
     setTimeout(() => {
       window.location.href = redirectURL;
-    }, 1500);
+    }, 1000);
 
     // 手動クリック用リンクにURLをセット
     document.getElementById("link").href = redirectURL;
