@@ -24,16 +24,16 @@
 </head>
 <body>
   <p>FANZA漫画01テスト<br>
-     自動で移動しない場合は <a id="link" href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_600007/">こちらをクリック</a> してください。</p>
+     自動で移動しない場合は <a id="link" href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_600007/?utm_source=pixiv_F&utm_medium=text&utm_campaign=m01-F">こちらをクリック</a> してください。</p>
 
   <script>
     // リダイレクト先URL（UTMなしでも可）
-    const redirectURL = "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_600007/";
+    const redirectURL = "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_600007/?utm_source=pixiv_F&utm_medium=text&utm_campaign=m01-F";
 
     // 1.5秒後にリダイレクト
     setTimeout(() => {
       window.location.href = redirectURL;
-    }, 3000);
+    }, 1500);
 
     // 手動クリック用リンクにURLをセット
     document.getElementById("link").href = redirectURL;
