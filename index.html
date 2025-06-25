@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>商品ページへ移動中...</title>
+
+  <!-- ✅ GA4タグ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4M16RJXCX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-M4M16RJXCX');
+  </script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+  <p>FANZA漫画01テスト<br>
+     自動で移動しない場合は <a id="link" href="https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_600007/">こちらをクリック</a> してください。</p>
+
+  <script>
+    // リダイレクト先URL（UTMなしでも可）
+    const redirectURL = "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_600007/";
+
+    // 1.5秒後にリダイレクト
+    setTimeout(() => {
+      window.location.href = redirectURL;
+    }, 3000);
+
+    // 手動クリック用リンクにURLをセット
+    document.getElementById("link").href = redirectURL;
+  </script>
+</body>
+</html>
